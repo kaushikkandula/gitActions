@@ -12,3 +12,8 @@ jobs:
         run: |
           node -v
           npm -v
+  run-powershell:
+    runs-on: windows-latest
+    steps:
+      - name: print string
+        run: write-host "hello"
